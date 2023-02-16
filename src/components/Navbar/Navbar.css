@@ -36,17 +36,33 @@
 .app__navbar-login a {
     margin: 0 1rem;
     text-decoration: none;
-    transition: 0.5s ease-out;
+    
+    box-shadow:
+   
+  
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
 
 }
 .app__navbar-login a:hover {
     border-bottom: 1px solid var(--color-golden);
+    color:var(--color-golden);}
+
+.app__navbar-login a:hover:after{
+    left: auto;
+  right: 0;
+  width: 100%;
+}
+.app__navbar-login:active{
+    top: 2px;
 }
 .app__navbar-login div {
     width: 1px;
     height: 30px;
     background-color: var(--color-grey);
 }
+
 .app__navbar-smallscreen {
     display: none;
 }
@@ -57,7 +73,7 @@
     width: 100%;
     height: 100vh;
     background:var(--color-black);
-    transition: 1s ease;
+    transition: all 200ms linear;
     flex-direction: column;
     z-index: 5;
 }
@@ -68,6 +84,7 @@
     position: absolute;
     top: 30px;
     right: 30px;
+    transition: all 200ms linear
 }  
 .app__navbar-smallscreen-links{
     list-style: none;
@@ -80,10 +97,38 @@
     font-size: 1.5rem;
     text-align: center;
     font-family:var(--font-base);
+    position: relative;
+	text-decoration: none;
+	
+    overflow: hidden; 
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: 900;
+	z-index: 2;
+	
+	text-transform: uppercase;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear; 
 }
 .app__navbar-smallscreen-links li:hover {
     color: var(--color-white);
 }
+.app__navbar-smallscreen-links li::after{
+    position: absolute;
+	content: '';
+	top: 50%;
+	margin-top: -2px;
+	left: 50%;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	background-color: #8167a9;
+	z-index: 1;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear; 
+}
+
 @media screen and (max-width:1150px) {
     .app__navbar-links{
         display: none;
