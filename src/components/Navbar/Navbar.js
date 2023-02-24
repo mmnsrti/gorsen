@@ -2,13 +2,14 @@ import React,{useState} from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import {MdOutlineRestaurantMenu} from 'react-icons/md'
 import images from '../../constants/images'
+
 import './Navbar.css';
 
 const Navbar = () => {
   const [togglemenu, setTogglemenu] = useState(false)
   return( <nav className='app__navbar'>
   <div className='app__navbar-logo'>
-    <img alt='app logo ' src={images.gericht}/>
+    <img alt='app logo ' src={images.gorsen}/>
   </div>
   <ul className='app__navbar-links'>
     <li className='p__opensans'><a href='#Home'>Home</a></li>
