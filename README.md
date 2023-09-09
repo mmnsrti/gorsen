@@ -26,7 +26,7 @@ Gorsen is a React project that converts a Figma design into interactive React co
 
 ## Demo
 
-You can check out the live demo of Gorsen [here](gorsen.netlify.app/).
+You can check out the live demo of Gorsen [here](https://gorsen.netlify.app/).
 
 ## Installation
 
