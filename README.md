@@ -1,6 +1,7 @@
 # Gorsen
 
 Gorsen is a React project that converts a Figma design into interactive React components and styles them using CSS. It includes a picture gallery and a restaurant video.
+
 <img src="/public/gorsen.png" alt="Logo" width="150" height="auto">
 
 
